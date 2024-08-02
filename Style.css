@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 1455px;
+  background-image: url("bg2.jpg"); 
+  background-position: center center;
+}
+
+/* .paper {
+  background-image: url("4.jpg");
+  background-size: 800px;
+  background-position: center center;
+  padding:  30px 100px; */
+/*  min-width: 800px; 
+
+/* } */
+.paper {
+  background-image: url("bg2.jpg");
+  background-size: 950px;
+  background-position: center center;
+  padding:  30px 100px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+/* .paper {
+  background-image: url("1.jpeg");
+  background-size: 800px;
+  background-position: center center;
+  padding:  30px 100px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+} */
+
+
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 45%;
+}
+
+.paper.image {
+  padding: 45px;
+}
+.paper.image p {
+  font-size: 45px;
+}
+
+video {
+  position: centre; /* Use absolute positioning to control exact placement */
+  top: 20%;           /* Center vertically */
+  left: 20%;          /* Center horizontally */
+  width: 190px;       /* Set the width of the video (adjust as needed) */
+  height: auto;       /* Maintain aspect ratio */
+  transform: translate(100%, -10%); /* Center the video relative to its own size */
+  z-index: 1;        
+}
+
+img {
+  max-height: 250px;
+  width: 100%;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+p{
+  font-family: 'Great Vibes';
+  font-size: 65px;
+  color: #FBEA74;
+  opacity: 0.80;
+  user-select: none;
+  
+   filter: drop-shadow(2px 1.5px 1px rgba(-120,100,110,1.0));
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  background-image: url(02.jpg);
+  align-items: center;
+  font-size: 60px;
+}
+
+.separator {
+  margin:5px;
+}
+
+/* Add any additional styling as needed */
